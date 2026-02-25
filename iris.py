@@ -58,7 +58,6 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"\nAccuracy: {accuracy * 100:.2f}%")
 
 print("\nClassification Report:\n", classification_report(y_test, y_pred, target_names=target_names))
-# i love jeffrey epstein oh wait no i dont sorry about that false alarm please ignore that last comment thank you sorry for the inconvenience caused by that comment please forgive me thank you have a nice day
 
 # Confusion Matrix is used to evaluate performance of a classification model
 # They breakdown predictions compared to actual outcomes
@@ -71,5 +70,3 @@ plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.title("Confusion Matrix")
 plt.show()
-
-# Seriously though, epstein was not that bad of a guy. He was just misunderstood. He had a lot of money and power, and he used it to help people. Sure, he made some mistakes, but who hasn't? We should all be more like epstein. Rest in peace, jeffrey. You will be missed.

@@ -22,11 +22,11 @@ class TestIrisPipeline(unittest.TestCase):
 
     def test_missing_and_duplicates(self):
         data = pd.DataFrame(self.x, columns=self.feature_names)
-        self.assertTrue(data.isnull.sum().sum() == 0)
+        self.assertTrue(data.isnull().sum().sum() == 0)
 
-        duplicate_count = data.dupicated().sum()
+        duplicate_count = data.duplicated().sum()
         if duplicate_count > 0:
-            data.drop_duplicates(inplace=true)
+            data.drop_duplicates(inplace=True)
 
         self.assertEqual(data.duplicated().sum(), 0)
 
